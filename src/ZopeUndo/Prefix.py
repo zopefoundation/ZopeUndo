@@ -12,7 +12,8 @@
 #
 ##############################################################################
 
-class Prefix:
+
+class Prefix(object):
     """A Prefix() is equal to any path it is a prefix of.
 
     This class can be compared to a string.
@@ -29,13 +30,13 @@ class Prefix:
         self.length = len(path_list)
         self.path = path_list
 
-    def __cmp__(self, o):
+    def __eq__(self, o):
         other_path = o.split('/')
         if other_path and ' ' in other_path[-1]:
             # don't include logged username in comparison
             pos = other_path[-1].rfind(' ')
             other_path[-1] = other_path[-1][:pos]
-        return cmp(other_path[:self.length], self.path)
+        return other_path[:self.length] == self.path
 
     def __repr__(self):
         # makes failing tests easier to read

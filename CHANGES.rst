@@ -4,6 +4,7 @@ Changelog
 4.0 (unreleased)
 ----------------
 
+- Add compatibility with Python 3.2 and 3.3.
 
 2.12.0 (2010-04-05)
 -------------------
