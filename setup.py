@@ -33,6 +33,7 @@ setup(
     long_description=README + '\n\n' + CHANGES,
     packages=find_packages('src'),
     package_dir={'': 'src'},
+    test_suite='ZopeUndo.tests',
     include_package_data=True,
     zip_safe=False,
 )
