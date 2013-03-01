@@ -11,9 +11,11 @@
 # FOR A PARTICULAR PURPOSE
 #
 ##############################################################################
-from ZopeUndo.Prefix import Prefix
 
 import unittest
+
+from ZopeUndo.Prefix import Prefix
+
 
 class PrefixTest(unittest.TestCase):
 
@@ -37,10 +39,6 @@ class PrefixTest(unittest.TestCase):
             self.assertNotEqual(p1, notEqual)
 
         p2 = Prefix("")
-        for equal in (" eggs", "/ eggs", "/def eggs", "/a/b eggs", 
+        for equal in (" eggs", "/ eggs", "/def eggs", "/a/b eggs",
                       "/a/b/c eggs", "/a/b/c/d eggs"):
             self.assertEqual(p2, equal)
-
-
-def test_suite():
-    return unittest.makeSuite(PrefixTest)
