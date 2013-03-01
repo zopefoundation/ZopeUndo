@@ -1,7 +1,7 @@
 Changelog
 =========
 
-4.0 (unreleased)
+4.0 (2013-03-02)
 ----------------
 
 - Add compatibility with Python 3.2 and 3.3. Note that the Prefix class
