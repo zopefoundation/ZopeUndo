@@ -1,9 +1,12 @@
 Changelog
 =========
 
-4.0.1 (unreleased)
-------------------
+4.1 (unreleased)
+----------------
 
+- Add compatibility with Python 3.4 and 3.5.
+
+- Drop support for Python 2.6 and 3.2.
 
 4.0 (2013-03-02)
 ----------------
