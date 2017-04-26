@@ -4,7 +4,9 @@ dist
 lib
 parts
 
+.coverage
 .tox
 *.pyc
 *.pyo
 *.egg-info
+nosetests.xml
