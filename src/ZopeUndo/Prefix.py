@@ -38,6 +38,9 @@ class Prefix(object):
             other_path[-1] = other_path[-1][:pos]
         return other_path[:self.length] == self.path
 
+    def __ne__(self, o):
+        return not self.__eq__(o)
+
     def __repr__(self):
         # makes failing tests easier to read
         return "Prefix('%s')" % '/'.join(self.path)

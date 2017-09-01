@@ -23,6 +23,8 @@ class PrefixTest(unittest.TestCase):
         p1 = Prefix("/a/b")
         for equal in ("/a/b", "/a/b/c", "/a/b/c/d"):
             self.assertEqual(p1, equal)
+        for equal in ("/a/b", "/a/b/c", "/a/b/c/d"):
+            self.assertEqual(p1 != equal, False)
         for notEqual in ("", "/a/c", "/a/bbb", "///"):
             self.assertNotEqual(p1, notEqual)
 
