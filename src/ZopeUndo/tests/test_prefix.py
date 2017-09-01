@@ -21,11 +21,17 @@ class PrefixTest(unittest.TestCase):
 
     def test(self):
         p1 = Prefix("/a/b")
+
+        # test "==" (__eq__) operator
         for equal in ("/a/b", "/a/b/c", "/a/b/c/d"):
             self.assertEqual(p1, equal)
-            self.assertFalse(p1 != equal)
         for notEqual in ("", "/a/c", "/a/bbb", "///"):
             self.assertNotEqual(p1, notEqual)
+
+        # test "!=" (__ne__) operator
+        for equal in ("/a/b", "/a/b/c", "/a/b/c/d"):
+            self.assertFalse(p1 != equal)
+        for notEqual in ("", "/a/c", "/a/bbb", "///"):
             self.assertTrue(p1 != notEqual)
 
         p2 = Prefix("")
