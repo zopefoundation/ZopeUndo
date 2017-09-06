@@ -4,6 +4,8 @@ Changelog
 4.3 (unreleased)
 ----------------
 
+- Add __ne__ to the Prefix class.
+  Fix a problem with undoLog/undoInfo filtering in ZODB.UndoLogCompatible
 
 4.2 (2017-04-26)
 ----------------
