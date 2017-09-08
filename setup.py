@@ -51,6 +51,7 @@ setup(
         "Programming Language :: Python :: Implementation :: CPython",
         "Programming Language :: Python :: Implementation :: PyPy",
     ],
+    keywords="zope zope4 undo",
     install_requires=[
         'setuptools',
     ],
