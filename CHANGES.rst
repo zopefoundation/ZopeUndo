@@ -1,7 +1,7 @@
 Changelog
 =========
 
-4.3 (unreleased)
+4.3 (2017-09-08)
 ----------------
 
 - Add ``__ne__`` to the Prefix class.
