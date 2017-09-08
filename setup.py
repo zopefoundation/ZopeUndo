@@ -15,7 +15,7 @@
 import os
 from setuptools import setup, find_packages
 
-__version__ = '4.3.dev0'
+version = '4.3.dev0'
 
 here = os.path.abspath(os.path.dirname(__file__))
 with open(os.path.join(here, 'README.rst')) as f:
@@ -26,7 +26,7 @@ with open(os.path.join(here, 'CHANGES.rst')) as f:
 
 setup(
     name='ZopeUndo',
-    version=__version__,
+    version=version,
     url='http://pypi.python.org/pypi/ZopeUndo',
     license='ZPL 2.1',
     description="ZODB undo support for Zope2.",
