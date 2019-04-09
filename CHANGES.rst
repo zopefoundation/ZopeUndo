@@ -4,7 +4,7 @@ Changelog
 4.4 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Update PyPy version. for Travis.
 
 
 4.3 (2017-09-08)
