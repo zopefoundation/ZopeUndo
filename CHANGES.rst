@@ -1,12 +1,14 @@
 Changelog
 =========
 
-4.4 (unreleased)
+5.0 (unreleased)
 ----------------
 
 - Update PyPy version for Travis.
 
 - Add support for Python 3.7.
+
+- Drop support for Python 3.4.
 
 
 4.3 (2017-09-08)
