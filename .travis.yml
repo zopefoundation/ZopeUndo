@@ -15,14 +15,18 @@ matrix:
 install:
     - pip install -U setuptools
     - pip install zc.buildout
+    - pip install coveralls coverage
     - buildout bootstrap
     - buildout
 
 script:
-    - bin/test -v1
+    - coverage run bin/test -v1
 
 notifications:
     email: false
+
+after_success:
+    - coveralls
 
 cache:
   pip: true
