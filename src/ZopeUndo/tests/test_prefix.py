@@ -50,3 +50,7 @@ class PrefixTest(unittest.TestCase):
         for equal in (" eggs", "/ eggs", "/def eggs", "/a/b eggs",
                       "/a/b/c eggs", "/a/b/c/d eggs"):
             self.assertEqual(p2, equal)
+
+    def test__repr__(self):
+        p1 = Prefix('/a/b')
+        self.assertEqual(repr(p1), "Prefix('/a/b')")
