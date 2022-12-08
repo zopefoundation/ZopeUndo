@@ -4,11 +4,11 @@ Changelog
 5.0 (unreleased)
 ----------------
 
+- Add support for Python 3.7, 3.8, 3.9, 3.10, 3.11.
+
 - Update PyPy version for Travis.
 
-- Add support for Python 3.7, 3.8 and 3.9.
-
-- Drop support for Python 3.4 and 3.5.
+- Drop support for Python 3.4.
 
 
 4.3 (2017-09-08)
