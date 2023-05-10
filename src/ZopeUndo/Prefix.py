@@ -13,7 +13,7 @@
 ##############################################################################
 
 
-class Prefix(object):
+class Prefix:
     """A Prefix() is equal to any path it is a prefix of.
 
     This class can be compared to a string.
