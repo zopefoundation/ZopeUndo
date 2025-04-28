@@ -30,9 +30,9 @@ class PrefixTest(unittest.TestCase):
 
         # test "!=" (__ne__) operator
         for equal in ("/a/b", "/a/b/c", "/a/b/c/d"):
-            self.assertFalse(p1 != equal)
+            self.assertEqual(p1, equal)
         for notEqual in ("", "/a/c", "/a/bbb", "///"):
-            self.assertTrue(p1 != notEqual)
+            self.assertNotEqual(p1, notEqual)
 
         p2 = Prefix("")
         for equal in ("", "/", "/def", "/a/b", "/a/b/c", "/a/b/c/d"):
