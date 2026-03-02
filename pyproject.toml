@@ -10,7 +10,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ZopeUndo"
-version = "6.1"
+version = "6.2.dev0"
 description = "ZODB undo support for Zope."
 license = "ZPL-2.1"
 classifiers = [
